@@ -34,3 +34,38 @@
   }
 }
 
+@mixin circle {
+  width: 75%;
+  background: white;
+  border: 3px solid red;
+  border-radius: 200px;
+}
+
+@mixin circle-bg ($bg: purple ) {
+  background-color: $bg;
+}
+
+.circles {
+  width: 75px;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  .circle-red {
+    @include circle;
+
+    @include circle-bg (red)
+  }
+
+  .circle-green {
+    @include circle;
+
+    @include circle-bg (green)
+  }
+
+  .circle-blue {
+    @include circle;
+
+    @include circle-bg (blue)
+  }
+}
