@@ -9,3 +9,26 @@
   height: 150px;
   border: 1px solid #000;
 }
+
+@for $i from 1 through 10 {
+  .box-#{$i} {
+    border: #{$i}px solid #0000;
+  }
+  
+}
+
+@for $i from 1 through 10 {
+  
+    .box-02, .box-04, .box-06, .box-08, .box-10 {
+      border: dotted;
+    }
+  
+}
+
+@for $i from 1 through 10 {
+  
+  .box-01, .box-03, .box-05, .box-07, .box-09 {
+    background-color: gray;
+  }
+
+}
