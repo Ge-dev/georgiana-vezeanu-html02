@@ -29,3 +29,8 @@
 
   background-color: purple;
 }
+.square-purple {
+  @extend .square;
+
+  background-color: purple;
+}
