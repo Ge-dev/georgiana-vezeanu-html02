@@ -6,18 +6,26 @@ $fa-font-path: '/fonts';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 
+//site fonts
+@import './fonts';
+
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
 
-@import './common';
 @import './variables';
-@import './reset';
-@import './fonts';
+@import './common';
+@import './shared/reset';
 @import './shared/index';
-
-
+@import './homepage/index';
 
 body {
   font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair-Display';
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 }
 
 

@@ -1,14 +1,50 @@
 .header-top {
-  background: url('../../../img/banners/banner1.png') no-repeat center center;
-  background-size: cover;
-  height: 500px;
 
-  li {
-    display: inline-flex;
-    justify-content: space-around;
+  .header-shipping {
+    text-align: center;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 19px;
+    color: #5E5A5A;
+    font-weight: 500;
+
+    i {
+      width: 25px;
+      height: 15px;
+      color: #5E5A5A;
+    }
   }
 
-  a {
-    color: $white;
+  h1 {
+    font-family: 'Baskerville Old Face BQ', serif;
+    font-size: 19px;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .header-controls {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 42px;
+    right: 30px;
+
+    a {
+      padding: 0 13px;
+      font-size: 17px;
+      color: #000;
+    }
+    
+    .header-search-d {
+      display: none;
+    }
   }
 }
+
+
+
